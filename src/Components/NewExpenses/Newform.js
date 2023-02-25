@@ -5,7 +5,6 @@ const Newform = (props) => {
   const [inputedTitle, setInputedTitle] = useState("");
   const [inputedAmount, setInputedAmount] = useState("");
   const [inputedDate, setInputedDate] = useState("");
-  const [cancelAdd, setCancelAdd] = useState(false);
 
   const inputedTitleHandler = (event) => {
     setInputedTitle(event.target.value);
@@ -30,10 +29,6 @@ const Newform = (props) => {
     setInputedTitle("");
     setInputedAmount("");
     setInputedDate("");
-  };
-
-  const cancelAddingExpense = () => {
-    setCancelAdd(true);
   };
 
   return (
